@@ -3,103 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My CV</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            margin: 0;
-            padding: 0;
-        }
-
-        .cv-container {
-            max-width: 800px;
-            margin: 20px auto;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-        }
-
-        .cv-header {
-            text-align: center;
-        }
-
-        .cv-header h1 {
-            margin: 0;
-            padding: 20px;
-            text-align: left;
-        }
-
-        .cv-image {
-            text-align: right;
-        }
-
-        .cv-image img {
-            max-width: 200px;
-            border-radius: 0%;
-        }
-
-        .cv-section {
-            margin-top: 20px;
-        }
-
-        .cv-section h2 {
-            border-bottom: 2px solid #333;
-            padding-bottom: 5px;
-        }
-
-        .cv-section ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .cv-section li {
-            margin-bottom: 10px;
-        }
-    </style>
+    <title>Hassan's CV</title>
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700&family=Manrope:wght@200;300;400;500;600&family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="cv-container">
-        <div class="cv-header">
-            <h1>Hassan Arslan Amir</h1>
-        </div>
-        <div class="cv-image">
-            <img src="./images/iron man.jpg" alt="Your Name">
-        </div>
-        <div class="cv-section">
-            <h2>Contact Information</h2>
-            <ul>
-                <li>Email: iceblue89221@gmail.com</li>
-                <li>Phone: 0308-4767657</li>
-                <li>Address: 343 Tulip Extension, Park View City, Lahore</li>
-            </ul>
-        </div>
-        <div class="cv-section">
-            <h2>Education</h2>
-            <ul>
-                <li>Bachelor's Degree in Computer Science</li>
-                <li>COMSATS University Islamabad, 2025</li>
-            </ul>
-        </div>
-        <div class="cv-section">
-            <h2>Work Experience</h2>
-            <ul>
-                <li>Recently graduated</li>
-                <li></li>
-            </ul>
-        </div>
-        <div class="cv-section">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML, CSS, JavaScript</li>
-                <li>C , JAVA</li>
-                <li></li>
-            </ul>
-        </div>
-        <div class="cv-section">
-            <h2>Career Objective</h2>
-            <p>I wish to work in <b>Multinational IT Company</b> where i can gain experience in my problem solving skills and then work specifically into development area which is the fastest growing feild globally.</p>
+    <div class="container">
+        <div class="background">
+            <div class ="columns">
+                <div class ="left-column">
+                    <h1 id="name">HASSAN ARSLAN AMIR</h1>
+            <h2 id="role">FRONT END DEVELOPER</h2>
+            <div class="details">
+                <p><i class="fas fa-envelope"></i>iceblue89221@gmail.com</p>
+                <p><i class="fas fa-phone-alt"></i>+92 308 4767657</p>
+            </div>
+                </div>
+            <div class="right-column">
+                <div class="image">
+                    
+                </div>
+            </div>
+            </div>
             
+            <div class="columns">
+                <div class="left-column">
+                    <div class="section">
+                        <h2>SUMMARY</h2>
+                        <p> Enthusiastic beginner front end developer with a knack for
+                            problem-solving and teamwork. Built projects like
+                            Deliveroo using React Native, and Firebase, showcasing my
+                            hands-on skills. Eager to learn, adaptable, and ready to contribute
+                            fresh insights and hard work to your team.</p>
+                        <div class="line-break"></div>
+                        <p> My ability to seamlessly integrate diverse technologies,
+                            demonstrates my versatility and hands-on experience, making me a
+                            standout choice for this job.</p>
+                    </div>
+                    <div class="section">
+                        <h2>EDUCATION</h2>
+                        <div class="education">
+                            <div class="edu-basic">
+                                <div class="edu-left">
+                                    <h3>Bachelors in Computer Science</h3>
+                                    <h5>COMSATS University Islamabad</h5>
+                                    <div class="edu-attributes">
+                                        <p><i class="fas fa-calendar-alt"></i>02/2021 - Present</p>
+                                        <p><i class="fas fa-map-marker-alt"></i>Lahore, Pakistan</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="line-break"></div>
+                        <div class="education">
+                            <div class="edu-basic">
+                                <div class="edu-left">
+                                    <h3>FSc. Pre Medical</h3>
+                                    <h5>Punjab Group of Colleges</h5>
+                                    <div class="edu-attributes">
+                                        <p><i class="fas fa-calendar-alt"></i>08/2018 - 07/2020</p>
+                                        <p><i class="fas fa-map-marker-alt"></i>Lahore, Pakistan</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <h2>PROJECTS</h2>
+                        <div class="projects">
+                            <h3>Blood Group </h3>
+                            <p>Implemented a real-world fully managed database to store the information regarding the blood present in the storage for the Blood Bank</p>
+                            <ul>
+                                <li>Scalable solution that can add 10,000+ records in the database.</li>
+                                <li>Fetches al the donor of same group at a time.</li>
+                            </ul>
+                        </div>
+                        <div class="line-break"></div>
+                        <div class="projects">
+                            <h3>Deliveroo Clone</h3>
+                            <p>Developed a feature-rich food delivery application inspired by Deliveroo using
+                                React Native, Redux and Firebase</p>
+                            <ul>
+                                <li>Real-Time Order Management with Firebase Firestore.</li>
+                                <li>User-Friendly Authentication, UI, Google Maps API.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-column">
+                   
+                    <div class="section skills-container">
+                        <h2>SKILLS</h2>
+                        <h3>Client-Side</h3>
+                        <div class="skills">
+                            <div class="skill">HTML</div>
+                            <div class="skill">CSS</div>
+                            <div class="skill">JS</div>
+                            <div class="skill">React</div>
+                            <div class="skill">Bootstrap</div>
+                            <div class="skill">Redux</div>
+                            
+                        </div>
+                        <div class="line-break"></div>
+                        <h3>Server-Side</h3>
+                        <div class="skills">
+                            <div class="skill">Node JS</div>
+                            <div class="skill">C#</div>
+                            <div class="skill">SQL</div>
+                            <div class="skill">Java</div>
+                        </div>
+                        <div class="line-break"></div>
+                        <h3>Other</h3>
+                        <div class="skills">
+                            <div class="skill">Git</div>
+                            
+                        </div>
+                    </div>
+                    <div class="section">
+                        <h2>FIND ME ONLINE</h2>
+                        <div class="links">
+                            <div class="link">
+                                <i class="fab fa-linkedin"></i>
+                                <div class="link-text">
+                                    <h5>LinkedIn</h5>
+                                    <p>linkedin.com/in/Hassan Arslan</p>
+                                </div>
+                            </div>
+                            <div class="line-break"></div>
+                            <div class="link">
+                                <i class="fab fa-github"></i>
+                                <div class="link-text">
+                                    <h5>Github</h5>
+                                    <p>github.com/Hassan89221</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
