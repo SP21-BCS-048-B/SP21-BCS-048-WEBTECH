@@ -7,6 +7,14 @@ body {
 p {
     margin: 0;
 }
+img{
+    size: 30%;
+    height: 160px;
+    width: 125px;
+    border: solid 3px black ;
+    border-radius: 50px;
+    float: right;
+}
 
 .container {
     display: flex;
