@@ -4,14 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pakistan Engineering Council</title>
-    <!-- Include Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
-<!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <img src="./images/logo.jpeg" height="120px">
     <div class="navbar-brand">
@@ -143,45 +140,19 @@ Pakistan Engineering Council (PEC) is a statutory regulatory body established in
          <div class="button">READ MORE -></div>
     </div>
 </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const navbarCollapse = document.querySelector('.navbar-collapse');
 
+            navLinks.forEach(function (link) {
+                link.addEventListener('click', function () {
+                    navbarCollapse.classList.remove('show');
+                });
+            });
+        });
+    </script>
 
-
-<!-- Contact Section -->
-<section id="contact" class="py-5">
-    <div class="container">
-        <h2>Contact Us</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <form>
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="Your Name">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="Your Email">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-            </div>
-            <div class="col-md-6">
-                <address>
-                    <strong>Akhtar Saeed Trust Hospital</strong><br>
-                    258-F, DHA EME LAHORE(PHASE XII)<br>
-                    MULTAN ROAD, LAHORE, PAKISTAN<br>
-                    Phone: (042) 35234102<br>
-                    Email: akhtarsaeedtrusthospital.com.pk
-                </address>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Include Bootstrap JS and jQuery -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
