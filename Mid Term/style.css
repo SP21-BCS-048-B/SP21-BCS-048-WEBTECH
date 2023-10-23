@@ -1,0 +1,57 @@
+.Message h3
+{
+    font-size: 20px;
+    color: green;
+}
+.Message h4{
+    font-size: 15px;
+}
+.left-column h2{
+    color: green;
+}
+.button {
+    color:green;
+    display: inline;
+    padding: auto;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+.navbar-brand h1,h3{
+    color: green;
+}
+.container image{
+    padding: auto;
+    align-self: auto;
+}
+.Introduction h3{
+    font-size: 20px;
+    color:green
+}
+.Introduction h4{
+    font-size: 15px;
+}
+.Introduction image{
+    height: 250px;
+}
+.chairman h2{
+    color: green;
+}
+.chairman h4{
+    font-size: 15px;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    text-align: center;
+    font-size: none;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: green;
+}
+.button:active{
+    background-color: green;
+}

@@ -21,12 +21,12 @@ img{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: #edece3;
+    background:#dbdbdb;
 }
 
 .background {
     margin: 30px;
-    background: white;
+    background:white;
     padding: 50px;
     min-width: 1000px;
     max-width: 1000px;
