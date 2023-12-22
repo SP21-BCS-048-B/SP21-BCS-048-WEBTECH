@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Properties</title>
+</head>
+<body>
+  <h1>Properties</h1>
+
+  <form action="/properties" method="get">
+    <label for="filter">Filter by Property Name:</label>
+    <input type="text" id="filter" name="filter" value="<%= filter %>">
+    <button type="submit">Filter</button>
+  </form>
+
+  <% if (properties.length === 0) { %>
+    <p>No properties available.</p>
+  <% } else { %>
+    <ul>
+      <% properties.forEach(property => { %>
+        <li><a href="/properties/<%= property._id %>"><%= property.name %></a></li>
+      <% }); %>
+    </ul>
+  <% } %>
+
+  <div>
+    <p>Page <%= page %> of <%= totalPages %></p>
+    <p>Total Properties: <%= totalProperties %></p>
+  </div>
+
+  <div>
+    <% if (page > 1) { %>
+      <a href="/properties?page=<%= page - 1 %>&pageSize=<%= pageSize %>&filter=<%= filter %>">Previous Page</a>
+    <% } %>
+    
+    <% if (page < totalPages) { %>
+      <a href="/properties?page=<%= page + 1 %>&pageSize=<%= pageSize %>&filter=<%= filter %>">Next Page</a>
+    <% } %>
+  </div>
+
+  <a href="/properties/create">Create New Property</a>
+</body>
+</html>
